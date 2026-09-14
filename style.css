@@ -1095,6 +1095,17 @@ section.start-animation .project-box{
         opacity: 1;
     }
 }
+@media (max-width: 991px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
