@@ -29,12 +29,12 @@
 --text-color: #F5F0E8;
 --main-color: #C8A97E;
  } */
-  /* :root{
+  :root{
     --bg-color: #17202A;
 --second-bg-color: #24303B;
 --text-color: #E8F0F2;
 --main-color: #5FA8A8;
-  } */
+  }
    /* :root{
     --bg-color: #171310;
 --second-bg-color: #28201A;
@@ -53,12 +53,12 @@
 --text-color: #FAFAFA;
 --main-color: #93C5FD;
      } */
-      :root{
+      /* :root{
         --bg-color: #000000;
 --second-bg-color: #121212;
 --text-color: #F5F5F5;
 --main-color: #A3A3A3;
-      }
+      } */
 body{
     background: var(--bg-color);
     height: 100vh;
