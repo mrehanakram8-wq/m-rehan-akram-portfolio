@@ -630,7 +630,7 @@ section.start-animation .text-content2 .btn{
 }
 section.start-animation .column:nth-child(1){
     animation: Right 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 .column:nth-child(2){
     opacity: 0;
@@ -638,7 +638,7 @@ section.start-animation .column:nth-child(1){
 }
 section.start-animation .column:nth-child(2){
     animation: Left 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 .column h2{
     font-size: 2.5rem;
@@ -648,7 +648,7 @@ section.start-animation .column:nth-child(2){
 }
 section.start-animation .column h2{
     animation: top 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 .box{
     border-left: .2rem solid var(--main-color);
@@ -720,7 +720,7 @@ section.start-animation .column h2{
 }
 section.start-animation .skill-title{
     animation: top 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 .skill-content{
     width: 100%;
@@ -741,7 +741,7 @@ section.start-animation .skill-title{
 }
 section.start-animation .skill-box1{
     animation: Right 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 .skill-box2{
     opacity: 0;
@@ -749,7 +749,7 @@ section.start-animation .skill-box1{
 }
 section.start-animation .skill-box2{
     animation: Left 1s ease forwards;
-    animation-delay: 1.4s;
+    animation-delay: .7s;
 }
 .single-skill{
     display: flex;
@@ -815,7 +815,7 @@ input:nth-child(1){
 }
 section.start-animation input:nth-child(1){
     animation: Right 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 input:nth-child(2){
     opacity: 0;
@@ -824,7 +824,7 @@ input:nth-child(2){
 }
 section.start-animation input:nth-child(2){
     animation: Left 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 input, textarea{
     width: 100%;
@@ -844,7 +844,7 @@ input, textarea{
 section.start-animation textarea{
 
     animation: Bottom 1s ease forwards;
-    animation-delay: 1.2s;
+    animation-delay: .5s;
 }
 input::placeholder{
 
@@ -873,7 +873,7 @@ textarea{
 }
 section.start-animation .btn{
     animation: Bottom 1s ease forwards;
-    animation-delay: 1.4s;
+    animation-delay: .7s;
 }
 .contact .btn:hover{
     background: var(--main-color);
@@ -929,9 +929,9 @@ footer i{
     .home img{
         display: none;
     }
-    .about img{
+    /* .about img{
         margin-top: 20px;
-    }
+    } */
     .navbar{
         position: absolute;
         left: 0;
@@ -1089,15 +1089,15 @@ section.start-animation .project-box{
 }
 
 .project-box:nth-child(1){
-    animation-delay: .2s;
+    animation-delay: .5s;
 }
 
 .project-box:nth-child(2){
-    animation-delay: .4s;
+    animation-delay: .5s;
 }
 
 .project-box:nth-child(3){
-    animation-delay: .6s;
+    animation-delay: .5s;
 }
 
 @keyframes ProjectSlide{
