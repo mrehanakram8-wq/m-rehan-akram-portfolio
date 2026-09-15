@@ -929,6 +929,9 @@ footer i{
     .home img{
         display: none;
     }
+    .about img{
+        margin-top: 20px;
+    }
     .navbar{
         position: absolute;
         left: 0;
