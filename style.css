@@ -485,6 +485,12 @@ i:hover::after{
     /* transform: translateY(-100px);
     opacity: 0; */
 }
+.hidden-text{
+    display: none;
+}
+.show-text{
+    display: inline !important;
+}
 .about .title{
     width: 100%;
     text-align: center;

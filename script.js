@@ -48,3 +48,24 @@ if (contactForm) {
       });
   });
 }
+
+
+// Read More Button Toggle Handler
+document.addEventListener("DOMContentLoaded", function() {
+  const readMoreBtn = document.getElementById('read-more-btn');
+  const moreText = document.getElementById('more-text');
+
+  if (readMoreBtn && moreText) {
+    readMoreBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      if (moreText.style.display === 'none' || moreText.style.display === '') {
+        moreText.style.display = 'inline';
+        readMoreBtn.textContent = 'Read Less';
+      } else {
+        moreText.style.display = 'none';
+        readMoreBtn.textContent = 'Read More';
+      }
+    });
+  }
+});
