@@ -25,3 +25,26 @@ window.onscroll = ()=>{
     menubar.classList.remove('bx-x');
     Navbar.classList.remove('active')
 }
+
+
+// EmailJS Public Key Initialization
+(function() {
+  emailjs.init("_BrC7wu4_hA-vmC5C");
+})();
+
+// Contact Form Submit Handler
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_ngs68t5', 'template_o9r9y24', this)
+      .then(function() {
+        alert('Message sent successfully!');
+        contactForm.reset();
+      }, function(error) {
+        alert('Failed to send message: ' + JSON.stringify(error));
+      });
+  });
+}

@@ -9,6 +9,7 @@
 </head>
 <body>
     <!-- ******Navbar****** -->
+
     <header class="header">
         <a href="#" class="logo">
             <span class="logo-icon">
@@ -232,7 +233,7 @@ My goal is to build professional and engaging web experiences that meet user's n
 
         <div class="project-box">
             <div class="project-img">
-                <img src="images/portfolio.png" alt="Football Team">
+                <img src="images/portfolio.png" alt="Portfolio">
             </div>
 
             <div class="project-content">
@@ -255,7 +256,24 @@ My goal is to build professional and engaging web experiences that meet user's n
 </section>
 
         <!-- Contact Section -->
-         <section class="contact" id="contact">
+
+            <section class="contact" id="contact">
+    <h2 class="title">Contact <span>Me</span></h2>
+    <form id="contact-form">
+        <div class="input-box">
+            <input type="text" name="name" required placeholder="Full Name">
+            <input type="email" name="email" required placeholder="Email">
+        </div>
+        <div class="input-box">
+            <input type="tel" name="phone" required placeholder="Mobile Number">
+            <input type="text" name="title" required placeholder="Subject For">
+        </div>
+        <textarea name="message" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+        <input type="submit" value="Send message" class="btn">
+    </form>
+</section>
+
+         <!-- <section class="contact" id="contact">
             <h2 class="title">Contact <span>Me</span></h2>
             <form action="#" id="">
                 <div class="input-box">
@@ -269,13 +287,15 @@ My goal is to build professional and engaging web experiences that meet user's n
                 <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
                 <input type="submit" value="Send message" class="btn">
             </form>
-         </section>
+         </section> -->
          <footer>
             <div class="text">
                 <p>Copyright @ 2026 by M Rehan Akram</p>
             </div>
             <a href="#"> <i class="bx bx-up-arrow-alt"></i></a>
          </footer>
+         <!-- 1. EmailJS Library (Pehle yeh aayegi) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
