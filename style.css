@@ -342,6 +342,9 @@ section{
         opacity: 1;
     }
 }
+.btn-section a{
+    text-decoration: none;
+}
 .btn-section{
     width: 32.5rem;
     height: 5rem;
