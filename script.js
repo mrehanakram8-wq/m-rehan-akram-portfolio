@@ -97,3 +97,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Random Theme Selector
+(function setRandomTheme() {
+    const totalThemes = 8; // Aap ke pas 5 extra themes hain
+    const randomThemeIndex = Math.floor(Math.random() * totalThemes) + 1;
+    
+    // Body tag par random theme class add karein
+    document.body.classList.add(`theme-${randomThemeIndex}`);
+})();
