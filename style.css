@@ -926,6 +926,9 @@ footer i{
     #menu{
         display: block;
     }
+    .home img{
+        display: none;
+    }
     .navbar{
         position: absolute;
         left: 0;
