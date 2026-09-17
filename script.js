@@ -161,21 +161,26 @@ window.onscroll = () => {
 };
 
 // Flask Backend Contact Form Handler
-const contactForm = document.getElementById('contact-form');
+// Flask Backend Contact Form Handler
+// Flask Backend Contact Form Handler
+const contactForm = document.querySelector('form');
 
 if (contactForm) {
     contactForm.addEventListener('submit', async function(event) {
         event.preventDefault();
 
-        // Form fields se input values nikalna
+        // Exact Input Fields Capture
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        
         const formData = {
-            name: contactForm.querySelector('input[name="name"]')?.value || contactForm.querySelector('input[type="text"]')?.value,
-            email: contactForm.querySelector('input[name="email"]')?.value || contactForm.querySelector('input[type="email"]')?.value,
-            message: contactForm.querySelector('textarea[name="message"]')?.value || contactForm.querySelector('textarea')?.value
+            fullName: inputs[0]?.value || "N/A",
+            email: inputs[1]?.value || "N/A",
+            mobile: inputs[2]?.value || "N/A",
+            subject: inputs[3]?.value || "N/A",
+            message: inputs[4]?.value || "N/A"
         };
 
         try {
-            // Local Flask Server ko request bhejna
             const response = await fetch('http://127.0.0.1:5000/api/contact', {
                 method: 'POST',
                 headers: {
@@ -187,14 +192,14 @@ if (contactForm) {
             const result = await response.json();
 
             if (response.ok) {
-                alert(result.message || 'Paigham kamyabi se bhej diya gaya hai!');
+                alert(result.message);
                 contactForm.reset();
             } else {
-                alert('Server issue: Message submit nahi ho saka.');
+                alert('Server Error: Submission failed.');
             }
         } catch (error) {
-            console.error('Error:', error);
-            alert('Python Backend disconnect hai! Pehle terminal mein app.py run karein.');
+            console.error('Fetch Error:', error);
+            alert('Python Backend disconnect hai! Terminal mein app.py chalaein.');
         }
     });
 }
