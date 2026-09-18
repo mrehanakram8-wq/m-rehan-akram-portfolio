@@ -202,6 +202,22 @@ html{
     }
     
 }
+.navbar a[href*="CV"] {
+    background: var(--main-color);
+    color: #fff;
+    padding: 0.8rem 1.8rem;
+    border-radius: 0.5rem;
+    transition: 0.3s ease;
+    animation: TopSlide 1s ease forwards;
+    animation-delay: calc(.2s * var(--vlr));
+}
+
+.navbar a[href*="CV"], i:hover {
+    box-shadow: 0 0 15px var(--main-color);
+    transform: scale(1.05);
+    color: white;
+    text-decoration: none;
+}
 .navbar a:hover,.navbar a.active{
     color: var(--main-color);
     text-decoration: underline;
