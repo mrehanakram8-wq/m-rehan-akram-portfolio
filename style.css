@@ -305,7 +305,7 @@ html{
 .navbar .dropdown-btn.active-cred i {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 /* Dropdown Menu (Hidden by default) */
@@ -1105,8 +1105,33 @@ footer i{
         display: block;
         margin: 3rem 0;
     }
+    .navbar .dropdown-btn{
+        margin-left: 0rem;
+    }
+    
 }
+@media (max-width: 991px) {
+    /* Agar aapka navbar mobile mein column/stack hota hai */
+    .navbar .dropdown-content {
+        position: relative; /* Mobile par absolute ki bajaye relative acha lagta hai */
+        width: 100%;
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.2);
+        /* margin-top: 5px; */
+        /* margin: 3rem 0; */
+        border: none;
+    }
 
+    .navbar .dropdown-content a {
+        padding-left: 10px;
+        padding-top: 0px;
+        font-size: 0.95rem;
+    }
+    /* .navbar .dropdown-content a:hover {
+        color: var(--main-color);
+        text-decoration: underline;
+    } */
+}
 /* Project */
 .projects .title{
     text-align: center;

@@ -123,15 +123,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+// Credentials Dropdown Handler (Fixed)
+// Credentials Dropdown Handler (Conflict Fix)
 document.addEventListener('DOMContentLoaded', () => {
     const credBtn = document.getElementById('credBtn');
     const credDropdown = document.getElementById('credDropdown');
+    const navlinks = document.querySelectorAll('header nav a'); // Ensure navlinks is accessible
 
     if (credBtn && credDropdown) {
         credBtn.addEventListener('click', (e) => {
+            e.preventDefault();
             e.stopPropagation();
             credDropdown.classList.toggle('show');
             credBtn.classList.toggle('active-cred');
+
+            // Jab credentials open ho, toh baaki links ki active state hata dein
+            if (credDropdown.classList.contains('show')) {
+                navlinks.forEach(link => link.classList.remove('active'));
+            }
+        });
+
+        credDropdown.addEventListener('click', (e) => {
+            e.stopPropagation();
         });
 
         document.addEventListener('click', () => {
