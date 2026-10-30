@@ -180,7 +180,7 @@ html{
 .navbar a{
     
     display: inline-block;
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     text-decoration: none;
     margin: 0 2.5rem;
     font-weight: 500;
@@ -222,6 +222,144 @@ html{
     color: var(--main-color);
     text-decoration: underline;
 }
+
+
+/* Dropdown Wrapper Container */
+/* .navbar .dropdown {
+    position: relative;
+    display: inline-block;
+} */
+
+/* Dropdown Content Box (Hidden by default) */
+/* .navbar .dropdown-btn {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f242d; 
+    background-color: transparent;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    z-index: 100;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
+/* Dropdown links Inside Content */
+/* .navbar .dropdown-content  {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+    transition: background 0.3s ease, color 0.3s ease;
+} */
+
+/* Hover Effect on Dropdown Items */
+/* .navbar .dropdown-content a:hover {
+    background-color: #00eeff; 
+    color: #1f242d;
+} */
+
+ /* Hovering over Dropdown Container shows Menu */
+ /* .navbar .dropdown:hover .dropdown-content {
+    display: block;
+}   */
+
+/* Dropdown Container */
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Button style for Navbar link */
+.navbar .dropdown-btn {
+    font-size: 1.4rem;
+    /* text-decoration: none; */
+    margin: 0 2.5rem;
+    font-weight: 500;
+    background: none;
+    border: none;
+    color: inherit;
+    /* font: inherit; */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    animation: TopSlide 3s ease forwards;
+    animation-delay: calc(.2s * var(--vlr));
+    transition: .5s ease;
+    /* transform: translateY(-100px); */
+}
+.navbar .dropdown-btn:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+
+}
+.navbar .dropdown-btn.active-cred{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+.navbar .dropdown-btn.active-cred i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* Dropdown Menu (Hidden by default) */
+.navbar .dropdown-content {
+    display: none; /* Hide default */
+    position: absolute;
+    top: 120%;
+    left: 0;
+    /* background-color: #1f242d; Aapka dark background */
+    background-color: transparent;
+    min-width: 190px;
+    /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); */
+    border-radius: 8px;
+    z-index: 100;
+    overflow: hidden;
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    animation-delay: 0s !important;
+    transition: none !important;
+    
+}
+
+/* Click hone par yeh class add hogi */
+.navbar .dropdown-content.show {
+    display: block;
+    /* text-align: center; */
+}
+
+/* Dropdown Links */
+.navbar .dropdown-content a {
+    color: white;
+    padding: 6px 0px;
+    text-decoration: none;
+    /* text-align: center; */
+    display: block;
+    font-size: 1.3rem;
+    /* font-weight: 500; */
+    /* transition: background 0.3s ease, color 0.3s ease; */
+}
+
+/* Hover Effect on List Items */
+.navbar .dropdown-content a:hover {
+    /* background-color: #1a5357; Cyan / Accent Color */
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Dropdown Links */
+
+
+
 section{
     padding: 10rem 9% 2rem;
     min-height: 100vh;

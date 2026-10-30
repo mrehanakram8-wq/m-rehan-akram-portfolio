@@ -120,3 +120,23 @@ document.addEventListener("DOMContentLoaded", function() {
     
 //     document.body.classList.add(`theme-${randomThemeIndex}`);
 // })();
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const credBtn = document.getElementById('credBtn');
+    const credDropdown = document.getElementById('credDropdown');
+
+    if (credBtn && credDropdown) {
+        credBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            credDropdown.classList.toggle('show');
+            credBtn.classList.toggle('active-cred');
+        });
+
+        document.addEventListener('click', () => {
+            credDropdown.classList.remove('show');
+            credBtn.classList.remove('active-cred');
+        });
+    }
+});
